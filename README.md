@@ -55,29 +55,6 @@ docker run --rm -p 8080:80 briaton-catalog
 
 Если меняете SCSS, пересоберите CSS своим прежним процессом (например Live Sass Compiler в редакторе или CLI `sass`). В репозитории уже лежит актуальный `css/style.css` для работы без пересборки.
 
-## Публикация на GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Briaton catalog frontend"
-git branch -M main
-git remote add origin https://github.com/dalem-732/site-Briaton.git
-git push -u origin main
-```
-
-Если на GitHub уже есть коммиты (например с README при создании репозитория):
-
-```bash
-git pull origin main --rebase
-# при конфликтах — правим файлы, затем:
-git add .
-git rebase --continue
-git push -u origin main
-```
-
-Файлы вроде `.idea/` и служебные артефакты ОС игнорируются — см. `.gitignore`.
-
 ## Лицензия
 
 MIT — текст в файле [`LICENSE`](LICENSE). При необходимости замените строку с copyright на своё имя или организацию.
